@@ -1,9 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+    <link rel="stylesheet" type="text/css" href="resource/css/index.css">
+    <meta charset="UTF-8">
+
+    <title>Students for Sensible Drug Policy</title>
 </head>
 <body>
+<ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="pages/temp.html">Mission</a></li>
+    <li><a href="pages/temp.html">Events</a></li>
+    <li><a href="pages/temp.html">Gallery</a></li>
+    <li><a href="pages/temp.html">Blog</a></li>
+    <li><a href="pages/connect.html">Connect</a></li>
+</ul>
+
+<ul class="ssdplogo">
+    <li><a>Students for Sensible Drug Policy UT Austin Chapter</a></li>
+</ul>
+
+
+
+
+<!-- The following codes demostrate jssor slider work with jquery library -->
+
+<script type="text/javascript" src="resource/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="resource/js/jssor.slider-20.mini.js"></script>
+<!-- use jssor.slider-20.debug.js instead for debug -->
+<script>
+    jQuery(document).ready(function ($) {
+
+        var jssor_1_SlideshowTransitions = [
+            {$Duration:1200,$Opacity:2}
+        ];
+
+        var jssor_1_options = {
+            $AutoPlay: true,
+            $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+            },
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+            },
+            $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+            }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+        //responsive code begin
+        //you can remove responsive code if you don't want the slider scales while window resizes
+        function ScaleSlider() {
+            var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+            if (refSize) {
+                refSize = Math.min(refSize, 600);
+                jssor_1_slider.$ScaleWidth(refSize);
+            }
+            else {
+                window.setTimeout(ScaleSlider, 30);
+            }
+        }
+        ScaleSlider();
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+        //responsive code end
+    });
+</script>
+
+
+
+
+<div id="jssor_1" style="position: relative; margin: 0 auto; top: 10px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
+    <!-- Loading Screen -->
+    <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+        <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+        <div style="position:absolute;display:block;background:url('resource/images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+    </div>
+    <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+        <div style="display: none;">
+            <img data-u="image" src="resource/images/01.png" />
+        </div>
+        <div style="display: none;">
+            <img data-u="image" src="resource/images/02.png" />
+        </div>
+        <div style="display: none;">
+            <img data-u="image" src="resource/images/03.png" />
+        </div>
+        <div style="display: none;">
+            <img data-u="image" src="resource/images/04.png" />
+        </div>
+    </div>
+    <!-- Bullet Navigator -->
+    <div data-u="navigator" class="jssorb05" style="bottom:16px;right:6px;" data-autocenter="1">
+        <!-- bullet navigator item prototype -->
+        <div data-u="prototype" style="width:16px;height:16px;"></div>
+    </div>
+    <!-- Arrow Navigator -->
+    <span data-u="arrowleft" class="jssora12l" style="top:123px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+    <span data-u="arrowright" class="jssora12r" style="top:123px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+    <a href="http://www.jssor.com" style="display:none">Jssor Slider</a>
+</div>
 
 </body>
 </html>

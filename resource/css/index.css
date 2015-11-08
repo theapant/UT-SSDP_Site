@@ -1,0 +1,189 @@
+@import url('http://fonts.googleapis.com/css?family=Lato');
+
+body {
+    background-color: #FFFFFF;
+}
+
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+    padding-top: 0.55em;
+    padding-right: 0;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+    text-indent:1em;
+    list-style:none;
+    background-repeat:no-repeat;
+    background-size: 2.1em 2.1em;
+    background-image: url("../images/cannabis.png");
+}
+.nav a{
+    display:inline-block;
+    padding-bottom:6em;
+    padding-top:2em;
+    padding-right:2.5em;
+    padding-left:0.3em;
+    text-transform: uppercase;
+    font-family: "Lato";
+    color: #696969;
+    font-weight:normal;
+    font-size: 100%;
+}
+
+.ssdplogo li {
+    display: table;
+    margin: 0 auto;
+    background-image: url("../images/ssdp-orange.png");
+    background-size: 35em 13em;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+}
+
+.ssdplogo a {
+    display:inline-block;
+    padding-bottom:2em;
+    padding-top:13em;
+    padding-left: 5em;
+    padding-right: 5em;
+    font-family: "Lato";
+    color: #696969;
+    font-weight:normal;
+    font-size: 120%;
+}
+a:link {
+    text-decoration: none;
+}
+
+
+/*This is all of the slider style shit*/
+.jssorb05 {
+    position: absolute;
+}
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 16px;
+    height: 16px;
+    background: url('../images/b05.png') no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jssorb05 div { background-position: -7px -7px; }
+.jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+.jssorb05 .av { background-position: -67px -7px; }
+.jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+/* jssor slider arrow navigator skin 12 css */
+/*
+.jssora12l                  (normal)
+.jssora12r                  (normal)
+.jssora12l:hover            (normal mouseover)
+.jssora12r:hover            (normal mouseover)
+.jssora12l.jssora12ldn      (mousedown)
+.jssora12r.jssora12rdn      (mousedown)
+*/
+.jssora12l, .jssora12r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 30px;
+    height: 46px;
+    cursor: pointer;
+    background: url('../images/a12.png') no-repeat;
+    overflow: hidden;
+}
+.jssora12l { background-position: -16px -37px; }
+.jssora12r { background-position: -75px -37px; }
+.jssora12l:hover { background-position: -136px -37px; }
+.jssora12r:hover { background-position: -195px -37px; }
+.jssora12l.jssora12ldn { background-position: -256px -37px; }
+.jssora12r.jssora12rdn { background-position: -315px -37px; }
+
+
+/*Temporary Page */
+.construction li {
+    display: table;
+    margin: 0 auto;
+    background-image: url("../images/construction.jpg");
+    background-size: 35em 13em;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.construction a {
+    display:inline-block;
+    padding-bottom:2em;
+    padding-top:13em;
+    padding-left: 5em;
+    padding-right: 5em;
+    font-family: "Lato";
+    color: #696969;
+    font-weight:normal;
+    font-size: 120%;
+}
+
+.fbfind {
+    text-align: center;
+    font-family: "Lato";
+    color: #000000;
+    font-size: 200%;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.leaders {
+    text-align: center;
+    font-family: "Lato";
+    color: #000000;
+    font-size: 200%;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.developers {
+    text-align: center;
+    font-family: "Lato";
+    color: #000000;
+    font-size: 200%;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.fb {
+
+}
+
+.fb {
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.fb li{
+    display:inline;
+    padding-top: 0.8em;
+    padding-right: 0;
+    padding-bottom: 1.5em;
+    padding-left: 0.5em;
+    text-indent:1em;
+    list-style:none;
+    background-repeat:no-repeat;
+    background-size: 3em 3em;
+    background-image: url("../images/fbicon.png");
+}
+.fb a{
+    display:inline-block;
+    padding-bottom:2em;
+    padding-top:2.5em;
+    padding-right:3em;
+    padding-left:3em;
+    text-transform: uppercase;
+    font-family: "Lato";
+    color: #696969;
+    font-weight:normal;
+    font-size: 120%;
+}
